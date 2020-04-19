@@ -1,5 +1,9 @@
 ## No-Pact 2D Game Challenge
 
+### Questions
+
+* You can find every answer to the written questions in the Questions folder.
+
 ### How to play the game
 
 #### Using Unity Editor
