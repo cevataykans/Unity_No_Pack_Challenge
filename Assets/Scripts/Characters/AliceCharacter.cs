@@ -8,7 +8,15 @@ public class AliceCharacter : MainCharacter
     protected override void Start()
     {
         moveSpeed = 8f;
-        jumpUnits = 10f;
+        jumpForce = 10f;
+        power = new ForwardDash();
+        weapon = new Gun();
         base.Start();
+    }
+
+    protected override void OnCollisionEnter2D(Collision2D collision)
+    {
+        body.gravityScale = 4f;
+        base.OnCollisionEnter2D(collision);
     }
 }

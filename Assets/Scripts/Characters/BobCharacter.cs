@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class BobCharacter : MainCharacter
 {
+    // Start is called before the first frame update
     protected override void Start()
     {
         moveSpeed = 4f;
-        jumpUnits = 7f;
+        jumpForce = 9f;
+        power = new GroundBreaker();
+        weapon = new GiantClub();
         base.Start();
     }
 }
